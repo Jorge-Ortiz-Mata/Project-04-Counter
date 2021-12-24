@@ -36,8 +36,12 @@ html {
 }
 
 .logoImage {
+    background-image: url('images/yorch-ws-white-words.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     margin: 10px;
-    height: 60px;
+    height: 50px;
+    width: 100px;
 }
 
 .logoInformation {
@@ -79,6 +83,7 @@ html {
 /*------------ First Part Menu Fixed. ------------*/
 
 .firstPartScroll {
+    background-color: #ffffff;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -91,8 +96,12 @@ html {
 }
 
 .firstPartScroll .logoImage {
+    background-image: url('images/yorch-ws-black-words.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     margin: 10px;
-    height: 60px;
+    height: 50px;
+    width: 100px;
 }
 
 .firstPartScroll .logoInformation {
@@ -101,11 +110,13 @@ html {
 }
 
 .firstPartScroll .logoName {
+    color: #3b2303;
     margin-top: auto;
 }
 
 .firstPartScroll .logoDescription {
     margin-bottom: auto;
+    color: #3b2303;
     font-weight: 600;
 }
 
@@ -121,14 +132,19 @@ html {
     margin-right: 20px;
 }
 
-
 .firstPartScroll .ulMenu li {
     margin: 5px;
+    color: #3b2303;
     margin-right: 20px;
+}
+
+.firstPartScroll .ulMenu li i{
+    color: #3b2303;
 }
 
 .firstPartScroll .ulMenu a {
     margin: 3px;
+    color: #3b2303;
     text-decoration: none;
 }
 
