@@ -12,7 +12,6 @@ html {
 /*--------------------------------------------------------------------- NAV SECTION ---------------------------------------------------------------*/
 
 .navSection {
-    border: 1px solid #007393;              /* Delete border. */
     height: 750px;
     display: flex;
     flex-direction: column;
@@ -28,45 +27,38 @@ html {
 /*------------ First Part. ------------*/
 
 .firstPart {
-    border: 1px solid #930000;              /* Delete border. */
     display: flex;
     justify-content: space-between;
 }
 
 .sectionLogo {
-    border: 1px solid #007393;              /* Delete border. */
     display: flex;
 }
 
 .logoImage {
-    border: 1px solid #930000;              /* Delete border. */
+    margin: 10px;
     height: 60px;
 }
 
 .logoInformation {
-    border: 1px solid #007393;              /* Delete border. */
     display: flex;
     flex-direction: column;
 }
 
 .logoName {
-    border: 1px solid #930000;              /* Delete border. */
     margin-top: auto;
 }
 
 .logoDescription {
-    border: 1px solid #930000;              /* Delete border. */
     margin-bottom: auto;
     font-weight: 600;
 }
 
 .mainMenu {
-    border: 1px solid #007393;              /* Delete border. */
     display: flex;
 }
 
 .ulMenu {
-    border: 1px solid #930000;              /* Delete border. */
     list-style: none;
     display: flex;
     margin-top: auto;
@@ -84,39 +76,89 @@ html {
     text-decoration: none;
 }
 
+/*------------ First Part Menu Fixed. ------------*/
+
+.firstPartScroll {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.firstPartScroll .sectionLogo {
+    display: flex;
+}
+
+.firstPartScroll .logoImage {
+    margin: 10px;
+    height: 60px;
+}
+
+.firstPartScroll .logoInformation {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstPartScroll .logoName {
+    margin-top: auto;
+}
+
+.firstPartScroll .logoDescription {
+    margin-bottom: auto;
+    font-weight: 600;
+}
+
+.firstPartScroll .mainMenu {
+    display: flex;
+}
+
+.firstPartScroll .ulMenu {
+    list-style: none;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+
+
+.firstPartScroll .ulMenu li {
+    margin: 5px;
+    margin-right: 20px;
+}
+
+.firstPartScroll .ulMenu a {
+    margin: 3px;
+    text-decoration: none;
+}
+
 /*------------ Second Part. ------------*/
 
 .secondPart {
-    border: 1px solid #930000;              /* Delete border. */
     margin: auto auto auto auto;
     display: flex;
     flex-direction: column;
 }
 
 .companyName {
-    border: 1px solid #007393;              /* Delete border. */
     margin: auto auto auto auto;
     font-size: 30px;
 }
 
 .companyImage {
-    border: 1px solid #007393;              /* Delete border. */
     margin: 10px auto auto auto;
     width: 550px;
 }
 
 .companyURL {
-    border: 1px solid #007393;              /* Delete border. */
     margin: 10px auto auto auto;
 }
 
 .projectName {
-    border: 1px solid #007393;              /* Delete border. */
     margin: 10px auto auto auto;
 }
 
 .descriptionProject {
-    border: 1px solid #007393;              /* Delete border. */
     margin: 10px auto auto auto;
     text-align: center;
 }
@@ -140,22 +182,20 @@ html {
 /*--------------------------------------------------------------------- FIRST SECTION ---------------------------------------------------------------*/
 
 .firstSection {
-    border: 1px solid #930000;              /* Delete border. */
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
 
 .shortInfo {
-    border: 1px solid #007393;              /* Delete border. */
     font-weight: 700;
     font-size: 30px;
     color: #3b2303;
-    margin: auto auto 15px auto;
+    margin: 300px auto 15px auto;
 }
 
 .goToCounters {
-    border: 1px solid #930000;              /* Delete border. */
+    border: 0px;
     margin: 15px auto auto auto;
     font-weight: 700;
     font-size: 20px;
@@ -173,13 +213,18 @@ html {
 /*--------------------------------------------------------------------- COUNTERS SECTION ---------------------------------------------------------------*/
 
 .counters {
-    border: 1px solid #930000;              /* Delete border. */
     height: 750px;
-    display: flex;
     flex-direction: row;
     padding: 5px;
+    display: flex;
+    visibility: hidden;
+}
+
+.countersAnimation {
     animation: countersAnimation;
     animation-duration: 3s;
+    visibility: visible;
+    display: flex;
 }
 
 @keyframes countersAnimation {
@@ -192,7 +237,6 @@ html {
 }
 
 .firstCounter, .secondCounter, .thirdCounter {
-    border: 1px solid #007393;              /* Delete border. */
     display: flex;
     flex-direction: column;
     margin: auto 10px auto 10px;
@@ -200,7 +244,6 @@ html {
 }
 
 .titleCounter {
-    border: 1px solid #930000;              /* Delete border. */
     color: #3b2303;
     font-size: 40px;
     text-align: center;
@@ -209,7 +252,6 @@ html {
 }
 
 .descriptionCounter {
-    border: 1px solid #930000;              /* Delete border. */
     color: #3b2303;
     font-size: 17px;
     font-weight: 600;
@@ -218,7 +260,6 @@ html {
 }
 
 .numberCounter {
-    border: 1px solid #930000;              /* Delete border. */
     color: #3b2303;
     font-size: 50px;
     text-align: center;
@@ -227,7 +268,6 @@ html {
 }
 
 .buttonsChange {
-    border: 1px solid #930000;              /* Delete border. */
     color: #3b2303;
     margin-top: 25px;
     text-align: center;
